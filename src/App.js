@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Navbar, Nav, Button, Form } from "react-bootstrap";
+import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RocioImg from "./img/Rocio.jpg";
 import InicioImg from "./img/inicio.jpg"; 
@@ -7,21 +7,12 @@ import SobreMiImg from "./img/sobremi.png";
 import HabilidadesImg from "./img/habilidadestecnicas.png";
 import ProyectosImg from "./img/proyecto.jpg";
 import ExperienciaImg from "./img/experiencia.jpg";
-import ContactoImg from "./img/contacto.jpg";
 import "./style.scss";
 import { Tabs, Tab } from "react-bootstrap";
 
 function App() {
   const [key, setKey] = React.useState("home"); 
-  const tabs = [
-    { key: "home", label: "Inicio" },
-    { key: "about", label: "Sobre mí" },
-    { key: "skills", label: "Habilidades Técnicas" },
-    { key: "projects", label: "Proyectos" },
-    { key: "experience", label: "Experiencia" },
-    { key: "services", label: "Servicios" },
-   
-  ];
+
   const playlists = [
     { id: "home", label: "Inicio", img: InicioImg},
     { id: "about", label: "Sobre mí", img: SobreMiImg },
